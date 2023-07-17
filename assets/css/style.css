@@ -340,12 +340,14 @@ header  ul li a {
 }
 .about .container .content{
     display: flex;
+    padding-top: 50px;
     /* flex-wrap: wrap; */
     justify-content: center;
+    gap: 30px;
 }
 .about .container .content .infos{
     margin-top: 70px;
-    width: 70%;
+    width: 60%;
     @media (max-width:992px){
         text-align: center;
     }
@@ -368,12 +370,13 @@ header  ul li a {
     margin-top: 20px;
 }
 .about .container .content .image img{
-    max-width: 100%;
+    width: 100%;
 }
 @media (max-width : 992px){
     .about .container .content{
         flex-wrap: wrap;
     }
+  
 }
 @media (max-width : 768px){
     .about .container .content .infos{
@@ -443,6 +446,9 @@ header  ul li a {
     }
     .skills .content .infos{
         width: 70% !important;
+    }
+    .skills .image{
+        width: 100% !important;
     }
    
 }
@@ -603,3 +609,113 @@ header  ul li a {
     }
 }
 /* End Contact */
+
+
+/* Start Footer */
+footer{
+    background-color: #191919;
+    color: white;
+    padding: 70px 0 0;
+  }
+  @media(max-width:768px){
+     footer {
+      text-align: center;
+     }
+     footer .social{
+      justify-content: center;
+    }
+  }
+  footer ul{
+    list-style: none;
+  }
+  footer .container{
+       display: grid;
+       grid-template-columns: repeat(auto-fill,minmax(255px,1fr));
+       gap: 40px;
+  }
+  
+  footer .galleryF img {
+    width: 78px;
+    border: 3px solid white;
+    margin: 2px;
+  }
+  footer .box .title{
+       font-size: 3.3rem;
+  }
+  footer .social{
+    display: flex;
+    gap: 10px;
+  }
+  footer .social a{
+    padding: 10px;
+  }
+  footer .social img{
+    display: flex;justify-content: center;align-items: center;
+     background-color: #ffffff;
+     font-size: 24px;
+     width: 48px;
+     height: 48px;
+     border-radius: 5px;
+
+    }
+  footer p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #b9b9b9;
+    line-height: 1.8;
+  }
+  footer .info{
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+  }
+  footer .info li{
+      display: flex;
+      gap: 15px;
+  }
+  footer .info i{
+     color: var(--main-color);
+     font-size: 25px;
+     margin-top: 7px;
+  }
+  footer *{
+    font-size: 15px;
+  }
+  footer .linkss li{
+     position: relative;
+     padding: 11px;
+     border-bottom: #777 solid 1px;
+     transition: 0.3s;
+  }
+  footer .linkss li:hover{
+      padding-left: 20px;
+  }
+  footer .linkss li:last-child{
+    border: none;
+  }
+  footer .box .linkss li:before{
+    content: "";
+  display: inline-block;
+  width: 20px; /* Adjust the width and height as per your image size */
+  height: 20px;
+  background-image: url("/assets/images/icons/angel-double.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 12px;
+  }
+  footer .box .facebook i:hover {
+    background-color: #1877f2 !important;
+  }
+  footer .box .twitter i:hover {
+    background-color: #1da1f2;
+  }
+  footer .box  .youtube i:hover {
+    background-color: #ff0000;
+  }
+  footer .copyright{
+      margin-top: 40px;
+      border-top: 1px solid #444;
+      padding: 18px;
+      text-align: center;
+  }
+  /* End Footer */
