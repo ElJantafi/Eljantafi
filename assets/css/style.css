@@ -267,6 +267,7 @@ header  ul li a {
 
 .hero .container .content .image .svg-icon {
     position: absolute;
+    z-index: -1;
     top: -50px;
     right: 0;
 }
@@ -276,10 +277,11 @@ header  ul li a {
 }
 @media (max-width: 992px) {
     .hero .container .content{
+        width: 100% ;
         justify-content: center;
     }
     .hero .container .content .infos{
-        width:90%;
+        width:100% !important;
     }
     .hero .container .content .image{
         display: none;
