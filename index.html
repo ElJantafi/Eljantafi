@@ -9,9 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </script>
 <script type="text/javascript">
   (function(){
@@ -24,22 +27,22 @@
       <div class="container">
           <div class="logo"><h1>Jantafi</h1></div>
   <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Work</a></li>
-        <li><a href="">Contact Us</a></li>
-        <li class="languageContainer"><a class="btn btn-primary language" href="">Languages</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <!-- <li class="languageContainer"><a class="btn btn-primary language" href="">Languages</a></li> -->
         <span class="cancel" id="cancel"><img src="/assets/images/icons/cancel.svg" alt="aa"></span>
       </ul>
       <div class="burger" id="burger"><img src="/assets/images/menu.png" alt=""></div>
  
      </div>
      </header>
-    <section class="hero">
+    <section class="hero" id="home" > 
      
-      <div class="container">
+      <div class="container" data-aos="zoom-in">
         <div class="content">
-          <div class="infos">
+          <div  class="infos" >
             <h1>Hii !! I am Salah , Full Stack Developer</h1>
             <p>
               I am a full-time freelance front-end developer from Morocco. who
@@ -47,7 +50,7 @@
               been in the field for nearly 4 years and have been loving every
               minute of it.
             </p>
-            <button class="btn btn-primary"><a href="">Contact Me</a></button>
+            <button class="btn btn-primary"><a href="#contact">Contact Me</a></button>
           </div>
           <div class="image">
             <img src="assets/images/hero.svg" alt="" />
@@ -80,7 +83,7 @@
       </div>
     </section>
 
-    <section class="expertise">
+    <section class="expertise" id="expertise" data-aos="fade-right">
       <div class="container">
 
         <h1 class="head-title">Expertise</h1>
@@ -117,15 +120,15 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h1 class="head-title">About Me</h1>
 
         <div class="content">
-          <div class="image">
+          <div class="image" data-aos="fade-right">
             <img src="/assets//images/deve.svg" alt="" />
           </div>
-          <div class="infos">
+          <div class="infos" data-aos="fade-left">
             <h1>Who I am ?</h1>
             <p>
               Presenting a landing page design for SaaS/Fintech. Please share
@@ -136,17 +139,17 @@
               placement of the elements.
             </p>
             <button class="btn btn-primary">
-              <a href=""> Contact Me </a>
+              <a href="#contact"> Contact Me </a>
             </button>
           </div>
         </div>
       </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="container">
         <h1 class="head-title">Skills</h1>
         <div class="content">
-          <div class="infos">
+          <div class="infos" data-aos="fade-up">
             <span>As A Full Stack Developer</span>
             <p>
               I have a superpower, and it's not X-ray vision or the ability to
@@ -183,18 +186,18 @@
               </div>
             </div>
           </div>
-          <div class="image">
+          <div class="image" data-aos="fade-down">
             <img src="/assets/images/dveloper.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <section class="work">
+    <section class="work" id="work">
       <div class="container">
         <h1 class="head-title">Work</h1>
         <div class="cards">
 
-          <div class="card">
+          <div class="card" data-aos="fade-down-left">
             <div class="image">
               <img src="/assets/images/projects/work-elkhaoua-pottery-c12253e4.jpg" alt=""/>
             </div>
@@ -203,7 +206,7 @@
               <span class="live"><a href="">Live Preview ></a></span>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-down-left">
             <div class="image">
               <img src="/assets/images/projects/work-elkhaoua-pottery-c12253e4.jpg" alt=""/>
             </div>
@@ -212,7 +215,7 @@
               <span class="live"><a href="">Live Preview ></a></span>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-down-left">
             <div class="image">
               <img src="/assets/images/projects/work-elkhaoua-pottery-c12253e4.jpg" alt=""/>
             </div>
@@ -221,7 +224,7 @@
               <span class="live"><a href="">Live Preview ></a></span>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="fade-down-left">
             <div class="image">
               <img src="/assets/images/projects/work-elkhaoua-pottery-c12253e4.jpg" alt=""/>
             </div>
@@ -233,8 +236,8 @@
           
       </div>
     </section>
-    <section class="contact">
-      <div class="container">
+    <section class="contact" id="contact">
+      <div class="container" data-aos="zoom-in-down">
         <h1 class="head-title">Contact Me</h1>
         <div class="content">
           <div class="form">
@@ -295,19 +298,14 @@
                 <h2 class="title">Eljantafi Salah</h2>  
                 <ul class="social">
                   <li>
-                    <a href="#" class="facebook">
+                    <a href="https://github.com/eljantafi">
                       <img src="assets/images/icons/github.png" alt="">
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="twitter">
+                    <a href="https://www.instagram.com/s.kantafi/">
                       <img src="assets/images/icons/instagram.png" alt="">
 
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="youtube">
-                      <i class="fab fa-youtube"></i>
                     </a>
                   </li>
                 </ul>
@@ -360,6 +358,10 @@
     }
    
 
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
